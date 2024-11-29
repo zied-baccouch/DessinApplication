@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- Groupe pour le Rouge -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:background="#F00" />
+
+        <SeekBar
+            android:id="@+id/sb_red"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:max="255" />
+    </LinearLayout>
+
+    <!-- Groupe pour le Vert -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:background="#0F0" />
+
+        <SeekBar
+            android:id="@+id/sb_green"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:max="255" />
+    </LinearLayout>
+
+    <!-- Groupe pour le Bleu -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:background="#00F" />
+
+        <SeekBar
+            android:id="@+id/sb_blue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:max="255" />
+    </LinearLayout>
+
+    <!-- Groupe pour le canal Alpha (déjà présent) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/quadrillage" />
+
+        <SeekBar
+            android:id="@+id/sbAlpha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:max="255" />
+    </LinearLayout>
+
+    <!-- Zone d'échantillon de couleur -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/quadrillage"
+            android:scaleType="fitXY"/>
+
+        <View
+            android:id="@+id/iv_color_sample"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#5F00" />
+    </FrameLayout>
+
+</LinearLayout>

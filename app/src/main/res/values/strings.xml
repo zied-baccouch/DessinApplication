@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dessin</string>
+    <string name="palette">palette</string>
+    <string name="grid">grid</string>
+    <string name="fill">fill</string>
+    <string name="undo">undo</string>
+    <string name="swap">swap</string>
+    <string name="ellipse">ellipse</string>
+    <string name="circle">circle</string>
+    <string name="line">line</string>
+    <string name="rectangle">rectangle</string>
+    <string name="choose_color_title">Choose a color</string>
+
+</resources>

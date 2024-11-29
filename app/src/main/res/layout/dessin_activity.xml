@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="UseAppTint">
+
+    <!-- barre d'outils du haut -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="NestedWeights">
+
+        <ImageButton
+            android:id="@+id/line"
+            android:src="@drawable/ic_line"
+            android:tint="@drawable/touch_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/line" />
+
+        <ImageButton
+            android:id="@+id/rectangle"
+            android:src="@drawable/ic_rectangle"
+            android:tint="@drawable/touch_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/rectangle" />
+
+        <ImageButton
+            android:id="@+id/circle"
+            android:src="@drawable/ic_circle"
+            android:tint="@drawable/touch_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/circle" />
+
+        <ImageButton
+            android:id="@+id/ellipse"
+            android:src="@drawable/ic_ellipse"
+            android:tint="@drawable/touch_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/ellipse" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+        <ImageButton
+            android:id="@+id/fillButton"
+            android:src="@drawable/ic_fill_or_not"
+            android:tint="@drawable/touch_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/fill" />
+
+    </LinearLayout>
+
+    <!-- zone de dessin -->
+    <fr.iutlan.dessin.DessinView
+        android:id="@+id/dessin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- barre d'outils du bas -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="NestedWeights">
+
+
+
+        <ImageButton
+            android:id="@+id/undo"
+            android:src="@drawable/ic_action_undo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/undo" />
+
+        <ImageButton
+            android:id="@+id/swap"
+            android:src="@drawable/ic_action_import_export"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/swap" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+        <ImageButton
+            android:id="@+id/grid"
+            android:src="@drawable/ic_grid"
+            android:tint="@drawable/touch_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/grid" />
+
+        <ImageButton
+            android:id="@+id/palette"
+            android:src="@drawable/ic_action_go_to_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/palette" />
+
+        <ImageButton
+            android:id="@+id/save"
+            android:src="@drawable/ic_action_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/grid" />
+
+    </LinearLayout>
+
+</LinearLayout>
